@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ahmed Raza</h1>
+    <script>
+
+        class raza {
+            constructor(a, b, c, d, e) {
+                this.Firsr = a
+                this.Second = b
+                this.Third = c
+                this.Fourth = d
+                this.Fifth = e
+            }
+
+            combine() {
+                return   `My Family Father is ${this.Fourth}`
+
+            }
+            static outer (a,b) {
+                return a +b
+            }
+        
+        }
+
+        // extends get the data from raza 
+        class family extends raza  {
+           constructor(a,b,c,d,e,f){
+            super(a,b,c,d,e)
+            this.Sixth  = f 
+           }
+
+        }
+        const brothers = new family ("AhmedRaza", "Muhammad Saad",
+            "Muhammad Hassan", "Muhammad Nadeem", 'Saima Nadeem')
+        
+
+
+
+console.log(raza.combine)
+// console.log(family.outer(5,5))
+
+
+
+
+    </script>
+</body>
+
+</html>
